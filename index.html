@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Shifumi</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shifumi</h1>
+            <p>Faites votre choix !</p>
+        </header>
+
+        <main>
+            <section class="game-board">
+                <button class="play-btn" data-choice="Pierre" aria-label="Jouer Pierre" type="button">🪨 Pierre</button>
+                <button class="play-btn" data-choice="Feuille" aria-label="Jouer Feuille" type="button">📃 Feuille</button>
+                <button class="play-btn" data-choice="Ciseaux" aria-label="Jouer Ciseaux" type="button">✂️ Ciseaux</button>
+            </section>
+
+            <section class="result-section" aria-live="polite">
+                <h2 id="round-message">Prêt à jouer ?</h2>
+                <p id="round-details"></p>
+            </section>
+
+            <section class="score-board">
+                <div class="score-item">
+                    <span>Victoires</span>
+                    <span id="score-wins">0</span>
+                </div>
+                <div class="score-item">
+                    <span>Nuls</span>
+                    <span id="score-draws">0</span>
+                </div>
+                <div class="score-item">
+                    <span>Défaites</span>
+                    <span id="score-losses">0</span>
+                </div>
+            </section>
+
+            <div class="reset-container">
+                <button id="btn-reset" aria-label="Réinitialiser les scores" type="button">Remettre à zéro</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
