@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jeu de Shifumi (Pierre, Feuille, Ciseaux) accessible et responsive.">
     <title>Jeu du Shifumi</title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/app.js" defer></script>
@@ -16,32 +17,32 @@
 
         <main>
             <section class="game-board">
-                <button class="play-btn" data-choice="Pierre" aria-label="Jouer Pierre" type="button">🪨 Pierre</button>
-                <button class="play-btn" data-choice="Feuille" aria-label="Jouer Feuille" type="button">📃 Feuille</button>
-                <button class="play-btn" data-choice="Ciseaux" aria-label="Jouer Ciseaux" type="button">✂️ Ciseaux</button>
+                <button class="play-btn" data-choice="Pierre" type="button">🪨 Pierre</button>
+                <button class="play-btn" data-choice="Feuille" type="button">📃 Feuille</button>
+                <button class="play-btn" data-choice="Ciseaux" type="button">✂️ Ciseaux</button>
             </section>
 
             <section class="result-section" aria-live="polite">
                 <h2 id="round-message">Prêt à jouer ?</h2>
             </section>
 
-            <section class="score-board">
-                <div class="score-item">
-                    <span>Victoires</span>
-                    <span id="score-wins">0</span>
+            <section class="score-board" aria-label="Scores de la partie">
+                <div class="score-card">
+                    <span class="score-label">Victoires</span>
+                    <span id="score-wins" class="score-number">0</span>
                 </div>
-                <div class="score-item">
-                    <span>Nuls</span>
-                    <span id="score-draws">0</span>
+                <div class="score-card">
+                    <span class="score-label">Nuls</span>
+                    <span id="score-draws" class="score-number">0</span>
                 </div>
-                <div class="score-item">
-                    <span>Défaites</span>
-                    <span id="score-losses">0</span>
+                <div class="score-card">
+                    <span class="score-label">Défaites</span>
+                    <span id="score-losses" class="score-number">0</span>
                 </div>
             </section>
 
             <div class="reset-container">
-                <button id="btn-reset" aria-label="Réinitialiser les scores" type="button">Remettre à zéro</button>
+                <button id="btn-reset" type="button">Remettre à zéro</button>
             </div>
         </main>
     </div>
